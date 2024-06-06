@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+
+    <title>Document</title>
+    <style>
+        /* *{
+            margin:0px;
+            padding:0px;
+            box-sizing: border-box;
+        } */
+        .container {
+            display: flex;
+            background-color: skyblue;
+            justify-content: space-between;
+        }
+
+        .right {
+            /* background-color: green; */
+            width: 20%;
+        }
+
+        .left {
+            width: 80%;
+        }
+
+        .left ul {
+            display: flex;
+            justify-content: space-evenly;
+            list-style: none;
+            /* background-color: red; */
+            padding:10px
+        }
+        .left ul li{
+            margin-bottom: 3px;
+        }
+        #alpha{
+            border-radius: 50%;
+            background-color: blue;
+            padding:10px
+        }
+
+        @media screen and (max-width:600px) {
+            .container{
+                display: block;
+                text-align: center;
+               
+            }
+            .right{
+                background-color: green;
+                width: 100%;
+            }
+            .left{
+                width: 100%;
+            }
+            .left ul{
+                flex-direction: column;
+            }
+            
+        }
+
+
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="right">
+            <p style="text-align: center;"> Welcome </p>
+
+        </div>
+        <div class="left">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Service</li>
+                <li>Contact</li>
+                <li id="alpha">A</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
